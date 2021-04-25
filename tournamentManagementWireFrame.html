@@ -1,0 +1,781 @@
+
+<!-- saved from url=(0065)https://whimsical.com/tournamentmanagement-NoCk6z9SwuHAFBq3kcjv24 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta content="ie=edge" http-equiv="x-ua-compatible"><meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"><title>tournamentManagement</title><link href="https://whimsical.com/s/images/apple-touch-icon-180_df3b1343f6670c1fe2d90b1e1425bb08.png" rel="apple-touch-icon" sizes="180x180"><link href="https://whimsical.com/a/manifest_3.json" rel="manifest"><link href="https://whimsical.co/feed.xml" rel="alternate" type="application/atom+xml"><link href="./tournamentManagementWireFrame_files/fonts_42240151fc53b9614c20ac9df402a866.css" rel="stylesheet"><link href="./tournamentManagementWireFrame_files/app_c80bd5f3098e4fa6f969c7e0bf0f871d.css" rel="stylesheet"><style>.account {
+  background: #B92BF0 url('/s/images/account-full-bg_9fcc4728375b13fce436f352529c4fca.svg') center top no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}</style><meta content="The Visual Workspace | Whimsical" property="og:title"><meta content="en_US" property="og:locale"><meta content="Whimsical" property="og:site_name"><meta content="https://whimsical.com/assets/cards/twitter-card@2x.png" property="og:image"><meta content="@WhimsicalPowers" name="twitter:site"><meta content="summary_large_image" name="twitter:card"><meta content="https://whimsical.com/assets/cards/twitter-card@2x.png" name="twitter:image"><script type="text/javascript" async="" src="./tournamentManagementWireFrame_files/phr2fv1c"></script><script>
+  if ("serviceWorker" in navigator) {
+    try {
+      var options = { scope: "/" };
+
+      navigator.serviceWorker.register("/s/js/service-worker.js", options).catch(function(error) {
+        console.warn("Service worker registration error:", error);
+      });
+
+      // Disable homescreen install prompt
+      window.addEventListener("beforeinstallprompt", function(event) {
+        event.preventDefault();
+      });
+    } catch (error) {
+      console.warn("Service worker registration error:", error);
+    }
+  }
+</script>
+<script>
+    var _rollbarConfig = {
+        accessToken: "b97ef5c776c74b10aa3bfe76ee7fd663",
+        hostWhiteList: ['whimsical.com', 'localhost'],
+        //verbose: true
+        captureUncaught: true,
+        captureUnhandledRejections: true,
+        payload: {
+            environment: "production",
+            client: {
+                javascript: {
+                    source_map_enabled: true,
+                    code_version: "95c8f5a1acea65ff3fba1e64988d366d632c57b4",
+                    guess_uncaught_frames: true
+                }
+            }
+        }
+    };
+    // Rollbar Snippet
+    !function(r){var e={};function o(n){if(e[n])return e[n].exports;var t=e[n]={i:n,l:!1,exports:{}};return r[n].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=r,o.c=e,o.d=function(r,e,n){o.o(r,e)||Object.defineProperty(r,e,{enumerable:!0,get:n})},o.r=function(r){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})},o.t=function(r,e){if(1&e&&(r=o(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)o.d(n,t,function(e){return r[e]}.bind(null,t));return n},o.n=function(r){var e=r&&r.__esModule?function(){return r.default}:function(){return r};return o.d(e,"a",e),e},o.o=function(r,e){return Object.prototype.hasOwnProperty.call(r,e)},o.p="",o(o.s=0)}([function(r,e,o){var n=o(1),t=o(4);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdnjs.cloudflare.com/ajax/libs/rollbar.js/2.14.4/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){var n=o(2);function t(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}var a=0;function l(r,e){this.options=r,this._rollbarOldOnError=null;var o=a++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}var i=o(3),s=function(r,e){return new l(r,e)},d=function(r){return new i(s,r)};function c(r){return t(function(){var e=Array.prototype.slice.call(arguments,0),o={shim:this,method:r,args:e,ts:new Date};window._rollbarShims[this.shimId()].messages.push(o)})}l.prototype.loadFull=function(r,e,o,n,a){var l=!1,i=e.createElement("script"),s=e.getElementsByTagName("script")[0],d=s.parentNode;i.crossOrigin="",i.src=n.rollbarJsUrl,o||(i.async=!0),i.onload=i.onreadystatechange=t(function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){i.onload=i.onreadystatechange=null;try{d.removeChild(i)}catch(r){}l=!0,function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,t,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(t=n.args||[],i=0;i<t.length;++i)if("function"==typeof(l=t[i])){l(e);break}}"function"==typeof a&&a(e)}()}}),d.insertBefore(i,s)},l.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var p="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),u=0;u<p.length;++u)l.prototype[p[u]]=c(p[u]);r.exports={setupShim:function(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var a=new d(e);return t(function(){e.captureUncaught&&(a._rollbarOldOnError=r.onerror,n.captureUncaughtExceptions(r,a,!0),e.wrapGlobalEventHandlers&&n.wrapGlobals(r,a,!0)),e.captureUnhandledRejections&&n.captureUnhandledRejections(r,a,!0);var t=e.autoInstrument;return!1!==e.enabled&&(void 0===t||!0===t||"object"==typeof t&&t.network)&&r.addEventListener&&(r.addEventListener("load",a.captureLoad.bind(a)),r.addEventListener("DOMContentLoaded",a.captureDomContentLoaded.bind(a))),r[o]=a,a})()}},Rollbar:d}},function(r,e){function o(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports={captureUncaughtExceptions:function(r,e,o){if(r){var n;if("function"==typeof e._rollbarOldOnError)n=e._rollbarOldOnError;else if(r.onerror){for(n=r.onerror;n._rollbarOldOnError;)n=n._rollbarOldOnError;e._rollbarOldOnError=n}e.handleAnonymousErrors();var t=function(){var o=Array.prototype.slice.call(arguments,0);!function(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null);var t=e.handleUncaughtException.apply(e,n);o&&o.apply(r,n),"anonymous"===t&&(e.anonymousErrorsPending+=1)}(r,e,n,o)};o&&(t._rollbarOldOnError=n),r.onerror=t}},captureUnhandledRejections:function(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}},wrapGlobals:function(r,e,n){if(r){var t,a,l="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(t=0;t<l.length;++t)r[a=l[t]]&&r[a].prototype&&o(e,r[a].prototype,n)}}}},function(r,e){function o(r,e){this.impl=r(e,this),this.options=e,function(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}(o.prototype)}o.prototype._swapAndProcessMessages=function(r,e){var o,n,t;for(this.impl=r(this.options);o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=o},function(r,e){r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){for(var o,n,t=(r=r||{}).globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);
+    // End Rollbar Snippet
+</script>
+<script>
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;
+        s.src='https://widget.intercom.io/widget/phr2fv1c';
+        var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+    window.IntercomBoot = function(args) {
+        var args = args ? args : {};
+        args.app_id = "phr2fv1c";
+        try {
+            Intercom('boot', args);
+        } catch (e) {
+            console.error("Intercom error:", e);
+        }
+    }
+</script>
+<script type="text/javascript">
+    var MTIProjectId='7723b9c5-0291-47fe-9ba4-95bad24e01b3';
+    (function() {
+        var mtiTracking = document.createElement('script');
+        mtiTracking.type='text/javascript';
+        mtiTracking.async='true';
+        mtiTracking.src='/fonts/mtiFontTrackingCode.js';
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+    })();
+</script><script type="text/javascript" async="" src="./tournamentManagementWireFrame_files/mtiFontTrackingCode.js.download"></script><style type="text/css">.ph1::-webkit-input-placeholder {
+  color: #4B5C6B;
+}
+
+.ph1:-moz-placeholder {
+  color: #4B5C6B;
+}
+
+.ph1::-moz-input-placeholder {
+  color: #4B5C6B;
+}
+
+.ph1:-ms-input-placeholder {
+  color: #4B5C6B;
+}.ph2::-webkit-input-placeholder {
+  color: #788896;
+}
+
+.ph2:-moz-placeholder {
+  color: #788896;
+}
+
+.ph2::-moz-input-placeholder {
+  color: #788896;
+}
+
+.ph2:-ms-input-placeholder {
+  color: #788896;
+}.ph3::-webkit-input-placeholder {
+  color: #9EADBA;
+}
+
+.ph3:-moz-placeholder {
+  color: #9EADBA;
+}
+
+.ph3::-moz-input-placeholder {
+  color: #9EADBA;
+}
+
+.ph3:-ms-input-placeholder {
+  color: #9EADBA;
+}::-webkit-scrollbar {
+  background-color: transparent;
+  height: 16px;
+  width: 16px;
+}
+
+::-webkit-scrollbar:hover {
+  background: var(--sb-bg,rgba(158,173,186,0.1));
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--sb-col,rgba(158,173,186,0.5));
+  background-clip: padding-box;
+  border-radius: 8px;
+  border: 4px solid transparent;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}.active-input text {
+  visibility: hidden;
+}
+
+.active-input text.always-visible {
+  visibility: visible;
+}.m5 {
+  font-family: DIN Next, sans-serif;
+  -moz-user-select: none;
+  user-select: none;
+  position: absolute;
+  cursor: default;
+  font-weight: 500;
+  -webkit-user-select: none;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.25);
+  background-color: #293845;
+  border-radius: 3px;
+  color: #FFFFFF;
+  -ms-user-select: none;
+}
+
+.m5 .mi6 {
+  min-width: 0;
+  align-items: center;
+  white-space: nowrap;
+  position: relative;
+  cursor: pointer;
+  padding-right: 32px;
+  border-radius: 2px;
+  display: flex;
+  color: inherit;
+}
+
+.m5 .mi6 .icon {
+  flex-shrink: 0;
+}
+
+.m5.large {
+  padding: 5px 0;
+  font-size: 16;
+  line-height: 19px;
+}
+
+.m5.large .mi6 {
+  margin: 1px 6px;
+  height: 38;
+}
+
+.m5.large .mi6 .shortcut {
+  margin-left: 20;
+  margin-right: -20;
+}
+
+.m5.small {
+  padding: 6px 0;
+  font-size: 14;
+  line-height: 16px;
+}
+
+.m5.small .mi6 {
+  margin: 0px 6px;
+  height: 32;
+}
+
+.m5.small .mi6 .shortcut {
+  margin-left: 20;
+  margin-right: -22;
+}@keyframes loading7 {
+
+0% {
+    transform: rotate(0deg);
+  }
+
+100% {
+    transform: rotate(360deg);
+  }
+
+}@keyframes loading-top-light {
+
+33% {
+    border-top-color: #C3CFD9;
+  }
+
+67% {
+    border-top-color: #8F2BE0;
+  }
+
+100% {
+    border-top-color: #C3CFD9;
+  }
+
+}@keyframes loading-bottom-light {
+
+33% {
+    border-bottom-color: #C3CFD9;
+  }
+
+67% {
+    border-bottom-color: #8F2BE0;
+  }
+
+100% {
+    border-bottom-color: #C3CFD9;
+  }
+
+}@keyframes loading-top-dark {
+
+33% {
+    border-top-color: #4B5C6B;
+  }
+
+67% {
+    border-top-color: #1AAE9F;
+  }
+
+100% {
+    border-top-color: #4B5C6B;
+  }
+
+}@keyframes loading-bottom-dark {
+
+33% {
+    border-bottom-color: #4B5C6B;
+  }
+
+67% {
+    border-bottom-color: #1AAE9F;
+  }
+
+100% {
+    border-bottom-color: #4B5C6B;
+  }
+
+}.form-row {
+  border-bottom: 1px solid #DFE7ED;
+}
+
+.form-row:last-child {
+  border-bottom: none;
+}@keyframes sync-spin {
+
+100% {
+    transform: rotate(-360deg);
+  }
+
+}@keyframes shake31 {
+
+10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+}.trash-item33 {
+  border-bottom: 1px solid #DFE6ED;
+  background-color: #FFFFFF;
+  height: 50;
+}
+
+.trash-item33:first-child {
+  border-radius: 3px 3px 0 0;
+}
+
+.trash-item33:last-child {
+  border-bottom: none;
+  border-radius: 0 0 3px 3px;
+}.hide-link-icon34 .i {
+  visibility: hidden;
+}.comments-editor-code > code {
+  counter-increment: comments-editor-code-cnt;
+  position: relative;
+}
+
+.comments-editor-code > code:before {
+  content: counter(comments-editor-code-cnt);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30;
+  text-align: center;
+  padding: 3px 0;
+}
+
+.comments-editor-code > code.light:before {
+  color: #788896;
+}
+
+.comments-editor-code > code.dark:before {
+  color: #9EADBA;
+}
+
+.comments-editor-code:first-child {
+  counter-reset: comments-editor-code-cnt;
+}@keyframes typing {
+
+33% {
+    background-color: #788896;
+  }
+
+67% {
+    background-color: #C3CFD9;
+  }
+
+100% {
+    background-color: #788896;
+  }
+
+}@keyframes comment-row-highlight-animation35 {
+
+0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+4% {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+
+16% {
+    transform: none;
+  }
+
+28% {
+    transform: translateX(-10px);
+  }
+
+40% {
+    transform: none;
+  }
+
+52% {
+    transform: translateX(-10px);
+  }
+
+64% {
+    opacity: 1;
+    transform: none;
+  }
+
+100% {
+    opacity: 0;
+  }
+
+}.G__38 a {
+  pointer-events: all;
+  outline: none;
+}.G__39:not(:first-child) {
+  border-top: 1px solid #30414F;
+}
+
+.G__39:not(:first-child).strong-border {
+  border-top: 2px solid #4B5C6B;
+}.active-input .caret {
+  visibility: hidden;
+}.notes-note-views-editor h1[data-empty=true]:after {
+  content: "Add a title…";
+  color: #9EADBA;
+  position: absolute;
+  top: 34;
+  left: 40;
+  pointer-events: none;
+}
+
+.notes-note-views-editor.no-description > p:nth-child(2):after {
+  content: "Add a description…";
+  color: #9EADBA;
+  position: absolute;
+  top: 6;
+  left: 40;
+  pointer-events: none;
+}.notes-note-views-editor-code > code {
+  counter-increment: notes-note-views-editor-code-cnt;
+  position: relative;
+}
+
+.notes-note-views-editor-code > code:before {
+  content: counter(notes-note-views-editor-code-cnt);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30;
+  text-align: center;
+  padding: 3px 0;
+  color: #788896;
+}
+
+.notes-note-views-editor-code:first-child {
+  counter-reset: notes-note-views-editor-code-cnt;
+}.notes-note-views-editor-cli-cb:focus {
+  outline: none;
+}@keyframes loading41 {
+
+0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+
+15% {
+    opacity: 0;
+  }
+
+50% {
+    opacity: 0.6;
+  }
+
+70% {
+    opacity: 0.6;
+  }
+
+100% {
+    transform: translateX(18px);
+    opacity: 0;
+  }
+
+}@keyframes voting-ring42 {
+
+0% {
+    stroke-width: 20;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+40% {
+    stroke-width: 0.5;
+    opacity: 0.2;
+  }
+
+60% {
+    stroke-width: 0.5;
+    opacity: 0;
+    transform: scale(4);
+  }
+
+100% {
+    stroke-width: 0.5;
+    opacity: 0;
+    transform: scale(4);
+  }
+
+}@keyframes voting-bubbles43 {
+
+0% {
+    opacity: 0.5;
+    transform: translateX(0px);
+  }
+
+10% {
+    opacity: 0.5;
+    transform: translateX(0px);
+  }
+
+50% {
+    opacity: 0.5;
+    transform: translateX(35px);
+  }
+
+90% {
+    opacity: 0;
+    transform: translateX(35px);
+  }
+
+100% {
+    opacity: 0;
+    transform: translateX(35px);
+  }
+
+}@keyframes voting-diamonds44 {
+
+0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+
+20% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+
+60% {
+    opacity: 0.8;
+    transform: translateX(23px) scale(1.5);
+  }
+
+100% {
+    opacity: 0;
+    transform: translateX(23px) scale(1.5);
+  }
+
+}@keyframes loading51 {
+
+0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+
+15% {
+    opacity: 0;
+  }
+
+50% {
+    opacity: 0.6;
+  }
+
+70% {
+    opacity: 0.6;
+  }
+
+100% {
+    transform: translateX(18px);
+    opacity: 0;
+  }
+
+}@keyframes search-menu-state-change53 {
+
+0% {
+    opacity: 0.5;
+    transform: translateY(1px);
+  }
+
+100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}@keyframes blink-cursor55 {
+
+0% {
+    opacity: 1;
+  }
+
+50% {
+    opacity: 0;
+  }
+
+100% {
+    opacity: 1;
+  }
+
+}@keyframes pop-cursor56 {
+
+0% {
+    transform: scale(0.25);
+  }
+
+25% {
+    transform: scale(1.25);
+  }
+
+100% {
+    transform: none;
+  }
+
+}@keyframes close-timeout60 {
+
+0% {
+    width: 0%;
+  }
+
+100% {
+    width: 100%;
+  }
+
+}</style><link type="text/css" rel="stylesheet" href="./tournamentManagementWireFrame_files/1.css"><link href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48Zz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNC4zMzY5NEMwIDMuMDQ2MjggMS4wNDYyOCAyIDIuMzM2OTQgMkgxMy42NjMxQzE0Ljk1MzcgMiAxNiAzLjA0NjI4IDE2IDQuMzM2OTRWMTIuNjYzMUMxNiAxMy45NTM3IDE0Ljk1MzcgMTUgMTMuNjYzMSAxNUgyLjMzNjk0QzEuMDQ2MjggMTUgMCAxMy45NTM3IDAgMTIuNjYzMVY0LjMzNjk0WiIgZmlsbD0iIzY1NThGNSIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNOS43MDAzOSAxMkM5LjQ5MjE5IDEyIDkuMzI1OTggMTEuOTQxIDkuMjAxNzQgMTEuODIzQzkuMDc3NDkgMTEuNzA1IDguOTc1MDggMTEuNTA0MyA4Ljg5NDQ5IDExLjIyMTFMNy44NTY5IDcuNTY5MzZINy44MzY3NUw2LjgxOTMgMTEuMjIxMUM2Ljc0NTQzIDExLjUwNDMgNi42NDQ2OSAxMS43MDUgNi41MTcwOSAxMS44MjNDNi4zODk0OSAxMS45NDEgNi4yMjE2IDEyIDYuMDEzNDEgMTJDNS44MTE5MyAxMiA1LjY0NTcyIDExLjk0MSA1LjUxNDc2IDExLjgyM0M1LjM4MzggMTEuNzA1IDUuMjgxMzkgMTEuNTA0MyA1LjIwNzUxIDExLjIyMTFMMy43OTcxOSA2LjAwMTQ1QzMuNzgzNzYgNS45NTQyNCAzLjc3MzY5IDUuOTAzNjYgMy43NjY5NyA1Ljg0OTcxQzMuNzYwMjUgNS43OTU3NiAzLjc1NjkgNS43NDg1NiAzLjc1NjkgNS43MDgwOUMzLjc1NjkgNS41MDU3OCAzLjgyMjM4IDUuMzM3MTkgMy45NTMzMyA1LjIwMjMxQzQuMDg0MjkgNS4wNjc0NCA0LjI2MDU4IDUgNC40ODIyIDVDNC42NTY4MiA1IDQuODA2MjQgNS4wNTIyNiA0LjkzMDQ4IDUuMTU2NzlDNS4wNTQ3MyA1LjI2MTMyIDUuMTQ3MDcgNS40MzgzNCA1LjIwNzUxIDUuNjg3ODZMNi4xMDQwNyA5LjQ5MTMzSDYuMTI0MjJMNy4xNjE4MSA1LjYzNzI4QzcuMjgyNyA1LjIxMjQzIDcuNTE0MzkgNSA3Ljg1NjkgNUM4LjIwNjEyIDUgOC40NDExNyA1LjIxMjQzIDguNTYyMDYgNS42MzcyOEw5LjYyOTg3IDkuNDkxMzNIOS42NTAwMkwxMC41MTY0IDUuNjg3ODZDMTAuNTcwMSA1LjQzODM0IDEwLjY2MDcgNS4yNjEzMiAxMC43ODgzIDUuMTU2NzlDMTAuOTE1OSA1LjA1MjI2IDExLjA2NzEgNSAxMS4yNDE3IDVDMTEuNDYzMyA1IDExLjYzNzkgNS4wNjc0NCAxMS43NjU1IDUuMjAyMzFDMTEuODkzMSA1LjMzNzE5IDExLjk1NjkgNS41MDU3OCAxMS45NTY5IDUuNzA4MDlDMTEuOTU2OSA1Ljc0ODU2IDExLjk1MzUgNS43OTU3NiAxMS45NDY4IDUuODQ5NzFDMTEuOTQwMSA1LjkwMzY2IDExLjkzIDUuOTU0MjQgMTEuOTE2NiA2LjAwMTQ1TDEwLjUwNjMgMTEuMjIxMUMxMC40MzI0IDExLjUwNDMgMTAuMzMgMTEuNzA1IDEwLjE5OSAxMS44MjNDMTAuMDY4MSAxMS45NDEgOS45MDE4NiAxMiA5LjcwMDM5IDEyWiIgZmlsbD0id2hpdGUiLz48L2c+PC9zdmc+" rel="icon" sizes="32x32" type="image/svg+xml"></head><body><div id="root"><div style="height: 100%;"><div style="align-items: stretch; top: 0px; background-color: rgb(255, 255, 255); width: 100%; justify-content: stretch; display: flex; position: absolute; flex-direction: column; height: 100%; left: 0px;"><style>html {overflow:hidden}</style><div class="no-user-select" style="align-items: stretch; transition: padding-left 200ms ease 0s; width: 100%; background: rgb(255, 255, 255); flex-shrink: 0; z-index: 501; display: flex; position: relative; touch-action: none; flex-direction: row; height: 50px;"><div style="flex-grow: 0; flex-basis: 0px; display: flex; flex-direction: row; justify-content: flex-start; align-items: center;"><div data-tooltip-id="G__1497" style="padding: 5px; border-right: 1px solid rgb(237, 241, 245); cursor: pointer;"><div style="width: 40px; height: 40px; background-image: url(&quot;/s/images/titlebar-icons-40x40_d5008f0164332248c4f089ab19b6002b.svg&quot;); background-position: 0px 0px;"></div></div></div><div style="flex-grow: 1; position: relative;"><div style="position: absolute; height: 100%; width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; padding: 0px 0px 0px 14px;"><div style="white-space: nowrap; display: flex; flex-direction: row; align-items: center; overflow: hidden;"><a data-tooltip-id="G__1517" href="https://whimsical.com/the-beginning-5Dae769fuhYeCYb3cwdrNB" style="cursor: pointer; display: flex; flex-direction: row; align-items: center; border-radius: 3px; height: 28px; padding: 0px 6px; overflow: hidden;"><span style="display: inline-block; width: 20px; height: 20px; flex-shrink: 0; padding: 2px;"><svg width="16" height="16" viewBox="0 0 16 16"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M0 3C0 1.89543 0.89543 1 2 1H5.09129C5.31409 1 5.53051 1.0744 5.70621 1.2114L7.72888 2.7886C7.90458 2.9256 8.121 3 8.3438 3H14C15.1046 3 16 3.89543 16 5V12C16 13.1046 15.1046 14 14 14H2C0.895431 14 0 13.1046 0 12V3Z" fill="#788896"></path></g></svg></span><span style="font-size: 16px; font-weight: 500; line-height: 20px; color: rgb(41, 56, 69); overflow: hidden; margin-left: 6px; text-overflow: ellipsis;">The Beginning</span></a><span style="flex-shrink: 0; font-size: 16px; line-height: 20px; font-weight: 500; color: rgb(195, 207, 217); margin: 0px 8px 0px 2px;">/</span></div><div data-tooltip-id="G__1487" style="position: relative; flex-grow: 0; flex-shrink: 0;"><div style="cursor: pointer;"><span style="display: inline-block; width: 20px; height: 20px; flex-shrink: 0; padding: 2px;"><svg width="16" height="16" viewBox="0 0 16 16"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.33694C0 3.04628 1.04628 2 2.33694 2H13.6631C14.9537 2 16 3.04628 16 4.33694V12.6631C16 13.9537 14.9537 15 13.6631 15H2.33694C1.04628 15 0 13.9537 0 12.6631V4.33694Z" fill="#6558F5"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9.70039 12C9.49219 12 9.32598 11.941 9.20174 11.823C9.07749 11.705 8.97508 11.5043 8.89449 11.2211L7.8569 7.56936H7.83675L6.8193 11.2211C6.74543 11.5043 6.64469 11.705 6.51709 11.823C6.38949 11.941 6.2216 12 6.01341 12C5.81193 12 5.64572 11.941 5.51476 11.823C5.3838 11.705 5.28139 11.5043 5.20751 11.2211L3.79719 6.00145C3.78376 5.95424 3.77369 5.90366 3.76697 5.84971C3.76025 5.79576 3.7569 5.74856 3.7569 5.70809C3.7569 5.50578 3.82238 5.33719 3.95333 5.20231C4.08429 5.06744 4.26058 5 4.4822 5C4.65682 5 4.80624 5.05226 4.93048 5.15679C5.05473 5.26132 5.14707 5.43834 5.20751 5.68786L6.10407 9.49133H6.12422L7.16181 5.63728C7.2827 5.21243 7.51439 5 7.8569 5C8.20612 5 8.44117 5.21243 8.56206 5.63728L9.62987 9.49133H9.65002L10.5164 5.68786C10.5701 5.43834 10.6607 5.26132 10.7883 5.15679C10.9159 5.05226 11.0671 5 11.2417 5C11.4633 5 11.6379 5.06744 11.7655 5.20231C11.8931 5.33719 11.9569 5.50578 11.9569 5.70809C11.9569 5.74856 11.9535 5.79576 11.9468 5.84971C11.9401 5.90366 11.93 5.95424 11.9166 6.00145L10.5063 11.2211C10.4324 11.5043 10.33 11.705 10.199 11.823C10.0681 11.941 9.90186 12 9.70039 12Z" fill="white"></path></g></svg></span></div></div><h1 data-tooltip-id="G__1519" style="align-items: center; overflow: hidden; cursor: text; padding: 0px 2px; display: flex; position: relative; border: 2px solid rgb(255, 255, 255); border-radius: 3px; flex-direction: row; height: 28px; margin: 0px 0px 0px 2px;"><span style="color: rgb(41, 56, 69); font-size: 16px; line-height: 20px; font-weight: 500; white-space: pre; overflow: hidden; text-overflow: ellipsis;">tournamentManagement</span></h1><div data-tooltip-id="G__1489" style="padding: 2px; cursor: pointer;"><div style="width: 20px; height: 20px; background-image: url(&quot;/s/images/misc-icons-20x20_5cdc3d99413d842822efb814bf57b545.svg&quot;); background-repeat: no-repeat; background-position: -1940px 0px;"></div></div><div data-tooltip-id="G__1490" style="position: relative; padding: 4px 0px;"><svg width="20" height="20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" style=""><rect x="0" y="0" width="20" height="20" fill-opacity="0"></rect><path d="M7.15918 7.17184C8.78243 5.60939 11.3332 5.60939 12.8985 7.17184C13.1451 7.41798 13.3602 7.69551 13.5349 8" stroke="#C3CFD9" fill="none"></path><path d="M12.7828 12.8427C12.0292 13.595 10.9857 14 9.94214 14C8.89862 14 7.91308 13.6528 7.10145 12.8427C6.87108 12.6127 6.66818 12.3553 6.50001 12.0742C6.48532 12.0496 6.47091 12.0249 6.45676 12" stroke="#C3CFD9" fill="none"></path><path d="M14.9832 10.4115L14.9811 13.6262C14.9808 13.9554 14.5934 14.1378 14.3325 13.9315L11.1434 11.4091C10.8826 11.2028 10.9805 10.7914 11.3073 10.7205L14.4985 10.0281C14.7475 9.97413 14.9833 10.1607 14.9832 10.4115Z" fill="#C3CFD9"></path><path d="M5.01676 9.60941L5.01888 6.3947C5.01909 6.06552 5.40659 5.88309 5.66741 6.08938L8.85655 8.61175C9.11737 8.81804 9.01945 9.2295 8.69267 9.3004L5.50142 9.99273C5.25246 10.0467 5.0166 9.8602 5.01676 9.60941Z" fill="#C3CFD9"></path><path d="M16 10a6 6 0 11-12 0 6 6 0 0112 0z" fill="#C3CFD9"></path><path d="M12.529 7.146c.472.286.621.9.334 1.37l-2.445 4.005a1 1 0 01-1.47.268l-2.106-1.64a.996.996 0 01-.173-1.4c.34-.434.968-.512 1.403-.173l1.222.95 1.86-3.047c.288-.47.903-.62 1.375-.333z" fill="#FFFFFF"></path></svg></div></div></div><div style="flex-basis: 0px; flex-grow: 0; display: flex; flex-direction: row; justify-content: flex-end; align-items: center;"><div style="border: 1px solid rgb(223, 230, 237); border-radius: 3px; box-shadow: rgba(0, 0, 0, 0.03) 0px 2px 6px; height: 28px; display: flex; flex-direction: row; padding: 0px 3px; margin: 0px 8px 0px 15px;"><div data-tooltip-id="G__1491" style="padding: 4px; cursor: pointer; display: flex; flex-direction: row; align-items: center;"><div style="width: 20px; height: 20px; background-image: url(&quot;/s/images/misc-icons-20x20_5cdc3d99413d842822efb814bf57b545.svg&quot;); background-repeat: no-repeat; background-position: -2080px 0px;"></div></div></div><div style="display: flex; flex-direction: row; align-items: center;"></div><div style="position: relative; margin: 0px 5px;"><div data-tooltip-id="G__1492" style="cursor: pointer; width: 40px; height: 48px; padding: 8px 4px; user-select: none;"><div style="position: relative; width: 32px; height: 32px;"><div style="align-items: center; transform: scale(0.97, 0.97); color: rgb(255, 255, 255); font-size: 12.8px; top: 0px; font-weight: 500; overflow: hidden; background-color: rgb(117, 105, 244); width: 32px; justify-content: center; display: flex; position: absolute; border-radius: 16px; height: 32px; left: 0px;"><span>PN</span></div><img src="./tournamentManagementWireFrame_files/AnWxvF9v4MvyR4.png" style="position: absolute; top: 0px; left: 0px; width: 32px; height: 32px; border-radius: 16px; object-fit: cover;"></div></div></div><div style="height: 50px; display: flex; flex-direction: row;"><div style="position: relative;"><div data-tooltip-id="G__1493" class="no-user-select" style="padding: 5px; cursor: pointer; border-left: 1px solid rgb(237, 241, 245);"><div style="width: 40px; height: 40px; background-image: url(&quot;/s/images/titlebar-icons-40x40_d5008f0164332248c4f089ab19b6002b.svg&quot;); background-position: -160px 0px;"></div></div></div><div style="position: relative;"><div data-tooltip-id="G__1494" class="no-user-select" style="padding: 5px; cursor: pointer; border-left: 1px solid rgb(237, 241, 245);"><div style="width: 40px; height: 40px; background-image: url(&quot;/s/images/titlebar-icons-40x40_d5008f0164332248c4f089ab19b6002b.svg&quot;); background-position: -240px 0px;"></div></div></div><div data-tooltip-id="G__1495" id="search-views-button" class="no-user-select" style="padding: 5px; cursor: pointer; border-left: 1px solid rgb(237, 241, 245);"><div style="width: 40px; height: 40px; background-image: url(&quot;/s/images/titlebar-icons-40x40_d5008f0164332248c4f089ab19b6002b.svg&quot;); background-position: -320px 0px;"></div></div><div style="position: relative;"><div class="no-user-select" style="padding: 5px 6px; cursor: pointer; border-left: 1px solid rgb(237, 241, 245);"><svg width="20" height="40" fill="#293845"><circle cx="10" cy="12" r="2"></circle><circle cx="10" cy="20" r="2"></circle><circle cx="10" cy="28" r="2"></circle></svg></div></div></div></div></div><div style="flex-grow: 1; display: flex; flex-direction: row; position: relative; z-index: 500; transition: padding-left 200ms ease 0s; background-color: rgb(237, 241, 245);"><div style="flex-grow: 1; display: flex; flex-direction: row; position: relative; overflow: hidden;"><div style="flex-grow: 1; display: flex; flex-direction: column; background-color: rgb(237, 241, 245); position: relative; overflow: hidden;"><div style="position: relative; flex-grow: 1; background-color: rgb(240, 244, 247);"><div id="canvas-container" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><canvas width="1920" height="769" style="position: absolute; top: 0px; left: 0px; width: 1536px; height: 615.6px;"></canvas><div style="top: 0px; user-select: none; width: 100%; cursor: default; position: absolute; height: 100%; left: 0px;"><svg data-canvasoverlay="true" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><g class="translate" style="transform: translate(914px, 5365px);"><g class="scale" style="transform-origin: 0px 0px;"><g pointer-events="none"></g><g></g><g pointer-events="none"></g><g pointer-events="none"></g></g></g></svg></div></div><div style="position: absolute; top: 5365px; left: 914px; overflow: visible; -webkit-font-smoothing: auto;"></div><div class="no-user-select" style="bottom: 20px; width: 100%; z-index: 401; padding: 0px 0px 0px 20px; justify-content: flex-end; display: flex; position: absolute; pointer-events: none; flex-direction: row; left: 0px;"><div data-tooltip-id="G__1499" style="line-height: 18px; text-overflow: ellipsis; box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 1px 0px, rgba(0, 0, 0, 0.1) 0px 2px 8px 0px; text-transform: uppercase; color: rgb(120, 136, 150); white-space: nowrap; font-size: 14px; transition: visibility 0.1s ease 0s, opacity 0.1s ease-in-out 0s; font-weight: 500; overflow: hidden; background-color: rgb(255, 255, 255); cursor: pointer; flex-shrink: 1; opacity: 0; padding: 9px 10px; margin-right: 20px; border-radius: 3px; visibility: hidden;">Zoom to content</div><div style="display: flex; flex-direction: row; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 1px 0px, rgba(0, 0, 0, 0.1) 0px 2px 8px 0px; border-radius: 3px; margin-right: 20px;"><div data-tooltip-id="G__1500" style="width: 36px; height: 36px; cursor: default; border-radius: 3px 0px 0px 3px; pointer-events: all; flex-shrink: 0;"><div style="width: 36px; height: 36px; background-image: url(&quot;/s/images/actionbar-icons-40x40_f5e28d42a0fb6d1f4966c25bbea27823.svg&quot;); background-position: -322px -2px; opacity: 0.3;"></div></div><div data-tooltip-id="G__1501" style="width: 37px; height: 36px; cursor: default; border-radius: 0px 3px 3px 0px; border-left: 1px solid rgb(237, 241, 245); pointer-events: all; flex-shrink: 0;"><div style="width: 36px; height: 36px; background-image: url(&quot;/s/images/actionbar-icons-40x40_f5e28d42a0fb6d1f4966c25bbea27823.svg&quot;); background-position: -362px -2px; opacity: 0.3;"></div></div></div><div style="display: flex; flex-direction: row; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 1px 0px, rgba(0, 0, 0, 0.1) 0px 2px 8px 0px; border-radius: 3px; margin-right: 20px;"><div data-tooltip-id="G__1502" style="width: 36px; height: 36px; cursor: pointer; border-radius: 3px; pointer-events: all; flex-shrink: 0;"><div style="width: 36px; height: 36px; background-image: url(&quot;/s/images/actionbar-icons-40x40_f5e28d42a0fb6d1f4966c25bbea27823.svg&quot;); background-position: -1002px -2px; opacity: 1;"></div></div></div><div style="display: flex; flex-direction: row; margin-right: 20px;"><div style="display: flex; flex-direction: row; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 1px 0px, rgba(0, 0, 0, 0.1) 0px 2px 8px 0px; border-radius: 3px; margin-right: 0px;"><div data-tooltip-id="G__1503" style="width: 36px; height: 36px; cursor: pointer; border-radius: 3px; pointer-events: all; flex-shrink: 0;"><div style="width: 36px; height: 36px; background-image: url(&quot;/s/images/actionbar-icons-40x40_f5e28d42a0fb6d1f4966c25bbea27823.svg&quot;); background-position: -482px -2px; opacity: 1;"></div></div></div></div><div style="display: flex; flex-direction: row; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 1px 0px, rgba(0, 0, 0, 0.1) 0px 2px 8px 0px; border-radius: 3px; margin-right: 20px; pointer-events: all;"><div data-tooltip-id="G__1504" style="width: 36px; height: 36px; cursor: pointer; border-radius: 3px 0px 0px 3px; pointer-events: all; flex-shrink: 0;"><div style="width: 36px; height: 36px; background-image: url(&quot;/s/images/actionbar-icons-40x40_f5e28d42a0fb6d1f4966c25bbea27823.svg&quot;); background-position: -2px -2px; opacity: 1;"></div></div><div style="position: relative;"><div data-tooltip-id="G__1505" style="line-height: 18px; color: rgb(120, 136, 150); text-align: center; font-size: 14px; font-weight: 500; width: 56px; cursor: pointer; border-left: 1px solid rgb(237, 241, 245); padding: 9px 0px; pointer-events: all;">100%</div><div class="m5 large" style="display: none; bottom: 40px; left: 50%; transform: translateX(-50%);"><div class="mi6"><div class="icon" style="width: 38px; height: 38px; background-image: url(&quot;/s/images/menu-icons-40x40_195071ad6787f0e221a174c9084e1cfc.svg&quot;); background-position: -881px -1px;"></div><div style="margin-left: 2px; min-width: 0px; flex-grow: 1;">Zoom to Content</div><div class="shortcut"><span style="margin-left: -4px; margin-right: -4px; font-size: 12px; font-weight: 500; line-height: 14px;"><span style="min-width: 10px; color: rgb(255, 255, 255); text-align: center; vertical-align: baseline; background-color: rgba(255, 255, 255, 0.2); padding: 2px 5px; display: inline-block; border-radius: 1.5px;">1</span></span></div></div><div class="mi6"><div class="icon" style="width: 38px; height: 38px; background-image: url(&quot;/s/images/menu-icons-40x40_195071ad6787f0e221a174c9084e1cfc.svg&quot;); background-position: -1321px -1px;"></div><div style="margin-left: 2px; min-width: 0px; flex-grow: 1;">Zoom to Selection</div><div class="shortcut"><span style="margin-left: -4px; margin-right: -4px; font-size: 12px; font-weight: 500; line-height: 14px;"><span style="min-width: 10px; color: rgb(255, 255, 255); text-align: center; vertical-align: baseline; background-color: rgba(255, 255, 255, 0.2); padding: 2px 5px; display: inline-block; border-radius: 1.5px;">2</span></span></div></div><div style="background-color: rgb(57, 73, 88); height: 1px; margin: 6px 0px 7px;"></div><div class="mi6"><div style="margin-left: 40px; min-width: 0px; flex-grow: 1;"><div><div style="position: absolute; background: rgb(75, 92, 107); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px; border-radius: 4px; top: 15px; left: 15px; width: 8px; height: 8px;"></div><div>50%</div></div></div><div class="shortcut"><span style="margin-left: -4px; margin-right: -4px; font-size: 12px; font-weight: 500; line-height: 14px;"><span style="min-width: 10px; color: rgb(255, 255, 255); text-align: center; vertical-align: baseline; background-color: rgba(255, 255, 255, 0.2); padding: 2px 5px; display: inline-block; border-radius: 1.5px;">5</span></span></div></div><div class="mi6"><div style="margin-left: 40px; min-width: 0px; flex-grow: 1;"><div><div style="position: absolute; background: rgb(75, 92, 107); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px; border-radius: 4px; top: 15px; left: 15px; width: 8px; height: 8px;"></div><div>70%</div></div></div><div class="shortcut"><span style="margin-left: -4px; margin-right: -4px; font-size: 12px; font-weight: 500; line-height: 14px;"><span style="min-width: 10px; color: rgb(255, 255, 255); text-align: center; vertical-align: baseline; background-color: rgba(255, 255, 255, 0.2); padding: 2px 5px; display: inline-block; border-radius: 1.5px;">7</span></span></div></div><div class="mi6"><div style="margin-left: 40px; min-width: 0px; flex-grow: 1;"><div><div style="position: absolute; background: linear-gradient(132.06deg, rgb(95, 198, 187) 0%, rgb(26, 174, 159) 100%); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px; border-radius: 4px; top: 15px; left: 15px; width: 8px; height: 8px;"></div><div>100%</div></div></div><div class="shortcut"><span style="margin-left: -4px; margin-right: -4px; font-size: 12px; font-weight: 500; line-height: 14px;"><span style="min-width: 10px; color: rgb(255, 255, 255); text-align: center; vertical-align: baseline; background-color: rgba(255, 255, 255, 0.2); padding: 2px 5px; display: inline-block; border-radius: 1.5px;">0</span></span></div></div><div class="mi6"><div style="margin-left: 40px; min-width: 0px; flex-grow: 1;"><div><div style="position: absolute; background: rgb(75, 92, 107); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px; border-radius: 4px; top: 15px; left: 15px; width: 8px; height: 8px;"></div><div>150%</div></div></div></div><div class="mi6"><div style="margin-left: 40px; min-width: 0px; flex-grow: 1;"><div><div style="position: absolute; background: rgb(75, 92, 107); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px; border-radius: 4px; top: 15px; left: 15px; width: 8px; height: 8px;"></div><div>200%</div></div></div></div></div></div><div data-tooltip-id="G__1506" style="width: 37px; height: 36px; cursor: pointer; border-radius: 0px 3px 3px 0px; border-left: 1px solid rgb(237, 241, 245); pointer-events: all; flex-shrink: 0;"><div style="width: 36px; height: 36px; background-image: url(&quot;/s/images/actionbar-icons-40x40_f5e28d42a0fb6d1f4966c25bbea27823.svg&quot;); background-position: -42px -2px; opacity: 1;"></div></div></div><div style="position: relative; pointer-events: all; margin-right: 20px;"><div data-tooltip-id="G__1507" class="no-user-select" style="width: 36px; height: 36px; background-image: url(&quot;/s/images/actionbar-icons-40x40_f5e28d42a0fb6d1f4966c25bbea27823.svg&quot;); background-position: -82px -2px; cursor: pointer; background-color: rgb(255, 255, 255); border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 1px 0px, rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;"></div><div class="m5 large" style="display: none; bottom: 40px; right: 0px;"><a rel="noopener noreferrer" class="mi6" target="_blank" href="https://www.facebook.com/WhimsicalPowers" style="align-items: center; color: rgb(255, 255, 255); white-space: nowrap; cursor: pointer; padding-right: 32px; display: flex; border-radius: 2px; height: 38px; margin: 1px 6px;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/menu-icons-40x40_195071ad6787f0e221a174c9084e1cfc.svg&quot;); background-position: -2481px -1px; flex-shrink: 0;"></div><div style="flex-grow: 1;">Facebook</div></a><a rel="noopener noreferrer" class="mi6" target="_blank" href="https://www.linkedin.com/company/whimsical/" style="align-items: center; color: rgb(255, 255, 255); white-space: nowrap; cursor: pointer; padding-right: 32px; display: flex; border-radius: 2px; height: 38px; margin: 1px 6px;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/menu-icons-40x40_195071ad6787f0e221a174c9084e1cfc.svg&quot;); background-position: -321px -1px; flex-shrink: 0;"></div><div style="flex-grow: 1;">Linkedin</div></a><a rel="noopener noreferrer" class="mi6" target="_blank" href="https://twitter.com/WhimsicalPowers" style="align-items: center; color: rgb(255, 255, 255); white-space: nowrap; cursor: pointer; padding-right: 32px; display: flex; border-radius: 2px; height: 38px; margin: 1px 6px;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/menu-icons-40x40_195071ad6787f0e221a174c9084e1cfc.svg&quot;); background-position: -361px -1px; flex-shrink: 0;"></div><div style="flex-grow: 1;">Twitter</div></a><a rel="noopener noreferrer" class="mi6" target="_blank" href="https://community.whimsical.com/" style="align-items: center; color: rgb(255, 255, 255); white-space: nowrap; cursor: pointer; padding-right: 32px; display: flex; border-radius: 2px; height: 38px; margin: 1px 6px;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/menu-icons-40x40_195071ad6787f0e221a174c9084e1cfc.svg&quot;); background-position: -2441px -1px; flex-shrink: 0;"></div><div style="flex-grow: 1;">Community</div></a><div style="background-color: rgb(57, 73, 88); height: 1px; margin: 6px 0px 7px;"></div><a rel="noopener noreferrer" class="mi6" target="_blank" href="https://help.whimsical.com/en/articles/3353331-product-updates" style="align-items: center; color: rgb(255, 255, 255); white-space: nowrap; cursor: pointer; padding-right: 32px; display: flex; border-radius: 2px; height: 38px; margin: 1px 6px;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/menu-icons-40x40_195071ad6787f0e221a174c9084e1cfc.svg&quot;); background-position: -2521px -1px; flex-shrink: 0;"></div><div style="flex-grow: 1;">What's New</div></a><a rel="noopener noreferrer" class="mi6" target="_blank" href="https://help.whimsical.com/en/articles/2623762-keyboard-shortcuts" style="align-items: center; color: rgb(255, 255, 255); white-space: nowrap; cursor: pointer; padding-right: 32px; display: flex; border-radius: 2px; height: 38px; margin: 1px 6px;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/menu-icons-40x40_195071ad6787f0e221a174c9084e1cfc.svg&quot;); background-position: -1241px -1px; flex-shrink: 0;"></div><div style="flex-grow: 1;">Keyboard Shortcuts</div></a><a rel="noopener noreferrer" class="mi6" target="_blank" href="https://help.whimsical.com/" style="align-items: center; color: rgb(255, 255, 255); white-space: nowrap; cursor: pointer; padding-right: 32px; display: flex; border-radius: 2px; height: 38px; margin: 1px 6px;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/menu-icons-40x40_195071ad6787f0e221a174c9084e1cfc.svg&quot;); background-position: -1361px -1px; flex-shrink: 0;"></div><div style="flex-grow: 1;">Help Center</div></a><div class="mi6"><div class="icon" style="width: 38px; height: 38px; background-image: url(&quot;/s/images/menu-icons-40x40_195071ad6787f0e221a174c9084e1cfc.svg&quot;); background-position: -401px -1px;"></div><div style="margin-left: 2px; min-width: 0px; flex-grow: 1;">Contact Us</div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; overflow: visible;"><div style="box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 8px 0px; transition: height 0.1s ease-in-out 0s, width 0.1s ease-in-out 0s; top: 20px; overflow: hidden; background-color: rgb(41, 56, 69); z-index: 501; position: absolute; align-self: stretch; border-radius: 3px; height: 316px; left: 20px;"><div><div class="no-user-select" style="padding: 6px 0px;"><div data-tooltip-id="G__1508" style="border-top-right-radius: 3px; margin-top: -6px; width: 50px; background: linear-gradient(rgb(117, 105, 244) 0%, rgb(131, 120, 245) 100%); cursor: pointer; border-top-left-radius: 3px; padding: 0px 6px; position: relative; margin-bottom: 6px; height: 38px;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/toolbar-icons-40x40_77c48e84524306c5b605fdeba92daab4.svg&quot;); background-position: -881px -1px;"></div></div><div data-tooltip-id="G__1509" style="width: 50px; height: 38px; padding: 0px 6px; cursor: pointer; position: relative;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/toolbar-icons-40x40_77c48e84524306c5b605fdeba92daab4.svg&quot;); background-position: -281px -1px; border-radius: 2px;"></div></div><div data-tooltip-id="G__1510" style="width: 50px; height: 38px; padding: 0px 6px; cursor: pointer; position: relative;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/toolbar-icons-40x40_77c48e84524306c5b605fdeba92daab4.svg&quot;); background-position: -241px -1px; border-radius: 2px;"></div></div><div data-tooltip-id="G__1511" style="width: 50px; height: 38px; padding: 0px 6px; cursor: pointer; position: relative;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/toolbar-icons-40x40_77c48e84524306c5b605fdeba92daab4.svg&quot;); background-position: -41px -1px; border-radius: 2px;"></div></div><div data-tooltip-id="G__1512" style="width: 50px; height: 38px; padding: 0px 6px; cursor: pointer; position: relative;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/toolbar-icons-40x40_77c48e84524306c5b605fdeba92daab4.svg&quot;); background-position: -81px -1px; border-radius: 2px;"></div></div><div><div data-tooltip-id="G__1513" style="width: 50px; height: 38px; padding: 0px 6px; cursor: pointer; position: relative;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/toolbar-icons-40x40_77c48e84524306c5b605fdeba92daab4.svg&quot;); background-position: -121px -1px; border-radius: 2px;"></div></div><input type="file" accept=".jpg, .jpeg, .png, .gif, .svg" style="display: none;"></div><div data-tooltip-id="G__1514" style="width: 50px; height: 38px; padding: 0px 6px; cursor: pointer; position: relative;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/toolbar-icons-40x40_77c48e84524306c5b605fdeba92daab4.svg&quot;); background-position: -161px -1px; border-radius: 2px;"></div></div><div data-tooltip-id="G__1515" style="width: 50px; height: 38px; padding: 0px 6px; cursor: pointer; position: relative;"><div style="width: 38px; height: 38px; background-image: url(&quot;/s/images/toolbar-icons-40x40_77c48e84524306c5b605fdeba92daab4.svg&quot;); background-position: -201px -1px; border-radius: 2px;"></div></div></div></div></div></div></div><div class="no-user-select" style="pointer-events: none; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 2px 0px inset;"></div></div></div><div style="box-shadow: rgba(0, 0, 0, 0.08) -2px 0px 2px 0px; transition: width 100ms ease 0s; overflow: hidden; background-color: rgb(255, 255, 255); width: 0px; flex-shrink: 0; z-index: 1; position: relative; visibility: hidden;"></div></div><div class="no-user-select" style="align-items: stretch; transition: left 200ms ease 0s; top: 0px; overflow: visible; width: 306px; z-index: 502; display: flex; position: absolute; visibility: hidden; flex-direction: column; height: 100%; left: -306px;"><div style="align-items: center; box-shadow: rgba(0, 0, 0, 0.08) 2px 0px 2px; transition: box-shadow 200ms ease 0s; background-color: rgb(255, 255, 255); flex-shrink: 0; z-index: 502; justify-content: flex-start; display: flex; flex-direction: row; height: 50px;"><div data-tooltip-id="G__76" style="padding: 5px; border-right: 1px solid rgb(237, 241, 245); cursor: pointer; margin-left: 0px; transition: margin-left 200ms ease 0s;"><div style="width: 40px; height: 40px; background-image: url(&quot;/s/images/titlebar-icons-40x40_d5008f0164332248c4f089ab19b6002b.svg&quot;); background-position: -80px 0px;"></div></div><div class="no-user-select" style="flex-grow: 1; position: relative; align-self: stretch; display: flex; justify-content: stretch;"><div data-tooltip-id="G__77" style="align-items: center; color: rgb(41, 56, 69); font-size: 16px; font-weight: 500; overflow: hidden; cursor: pointer; max-width: 206px; padding: 0px 0px 0px 20px; display: flex; flex-direction: row;"><div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Personal</div><svg width="20" height="20" fill="#293845" style="margin-left: -2px; margin-top: -2px; flex-shrink: 0;"><path d="M9.261 12.697l-2.955-2.93a1.029 1.029 0 010-1.464 1.051 1.051 0 011.478 0L10 10.5l2.216-2.197a1.051 1.051 0 011.478 0 1.03 1.03 0 010 1.465l-2.955 2.929a1.051 1.051 0 01-1.478 0z"></path></svg></div></div><div data-tooltip-id="G__1496" style="padding: 13px 15px 17px; height: 50px; cursor: pointer;"><svg width="20" height="20" fill="#9EADBA" style="transition: transform 50ms ease 0s;"><circle cx="10" cy="8" r="4" fill="none" stroke-width="2" stroke="#9EADBA"></circle><path d="M9 12h2v5.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V12z"></path></svg></div></div><div style="box-shadow: rgba(0, 0, 0, 0.08) 2px 0px 2px 0px; background-color: rgb(255, 255, 255); border-top: 1px solid rgb(237, 241, 245); flex-shrink: 1; flex-grow: 1; display: flex; flex-direction: column;"><div style="background-color: rgb(255, 255, 255); flex-shrink: 1; flex-grow: 1; display: flex; flex-direction: column;"><div style="flex-grow: 1; position: relative;"><div style="position: absolute; width: 100%; height: 100%; flex-grow: 1; overflow-y: auto;"><div style="min-height: 100%; display: flex; flex-direction: column;"><div style="padding: 15px 20px; border-bottom: 1px solid rgb(237, 241, 245);"><div style="display: flex; flex-direction: row; align-items: center; padding: 5px 0px 4px; position: relative;"><div data-tooltip-id="G__1406" class="no-user-select" style="flex-grow: 1; display: flex; flex-direction: row; overflow: hidden; cursor: pointer;"><div style="line-height: 20px; text-overflow: ellipsis; text-transform: uppercase; color: rgb(120, 136, 150); white-space: nowrap; font-size: 14px; font-weight: 700; overflow: hidden; letter-spacing: 1px;">Favorites</div></div></div><div style="position: relative; user-select: none;"><div style="position: relative; padding: 3px 0px;"><div draggable="true" style="position: relative;"><a draggable="false" href="https://whimsical.com/tournamentmanagement-NoCk6z9SwuHAFBq3kcjv24" style="align-items: center; transition: background-color 100ms ease 0s; overflow: hidden; margin-left: 14px; cursor: pointer; z-index: 1; padding-left: 10px; display: flex; position: relative; border-radius: 2px; flex-direction: row; background-color: rgb(223, 230, 237);"><div style="margin: 7px 5px 7px 2px;"><span style="display: inline-block; width: 20px; height: 20px; flex-shrink: 0; padding: 2px;"><svg width="16" height="16" viewBox="0 0 16 16"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.33694C0 3.04628 1.04628 2 2.33694 2H13.6631C14.9537 2 16 3.04628 16 4.33694V12.6631C16 13.9537 14.9537 15 13.6631 15H2.33694C1.04628 15 0 13.9537 0 12.6631V4.33694Z" fill="#6558F5"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9.70039 12C9.49219 12 9.32598 11.941 9.20174 11.823C9.07749 11.705 8.97508 11.5043 8.89449 11.2211L7.8569 7.56936H7.83675L6.8193 11.2211C6.74543 11.5043 6.64469 11.705 6.51709 11.823C6.38949 11.941 6.2216 12 6.01341 12C5.81193 12 5.64572 11.941 5.51476 11.823C5.3838 11.705 5.28139 11.5043 5.20751 11.2211L3.79719 6.00145C3.78376 5.95424 3.77369 5.90366 3.76697 5.84971C3.76025 5.79576 3.7569 5.74856 3.7569 5.70809C3.7569 5.50578 3.82238 5.33719 3.95333 5.20231C4.08429 5.06744 4.26058 5 4.4822 5C4.65682 5 4.80624 5.05226 4.93048 5.15679C5.05473 5.26132 5.14707 5.43834 5.20751 5.68786L6.10407 9.49133H6.12422L7.16181 5.63728C7.2827 5.21243 7.51439 5 7.8569 5C8.20612 5 8.44117 5.21243 8.56206 5.63728L9.62987 9.49133H9.65002L10.5164 5.68786C10.5701 5.43834 10.6607 5.26132 10.7883 5.15679C10.9159 5.05226 11.0671 5 11.2417 5C11.4633 5 11.6379 5.06744 11.7655 5.20231C11.8931 5.33719 11.9569 5.50578 11.9569 5.70809C11.9569 5.74856 11.9535 5.79576 11.9468 5.84971C11.9401 5.90366 11.93 5.95424 11.9166 6.00145L10.5063 11.2211C10.4324 11.5043 10.33 11.705 10.199 11.823C10.0681 11.941 9.90186 12 9.70039 12Z" fill="white"></path></g></svg></span></div><div style="line-height: 18px; text-overflow: ellipsis; color: rgb(41, 56, 69); white-space: nowrap; font-size: 15px; font-weight: 500; overflow: hidden; flex-grow: 1; padding: 8px 10px 8px 0px;">tournamentManagement</div></a></div></div></div></div><div style="padding: 15px 20px;"><div style="display: flex; flex-direction: row; align-items: center; padding: 5px 0px 4px; position: relative;"><div data-tooltip-id="G__79" class="no-user-select" style="flex-grow: 1; display: flex; flex-direction: row; overflow: hidden; cursor: pointer;"><div style="line-height: 20px; text-overflow: ellipsis; text-transform: uppercase; color: rgb(120, 136, 150); white-space: nowrap; font-size: 14px; font-weight: 700; overflow: hidden; letter-spacing: 1px;">Private</div></div><div data-tooltip-id="G__80" style="background-color: rgb(255, 255, 255); width: 18px; height: 18px; margin: 0px 8px; border-radius: 3px; border: 1px solid rgb(223, 230, 237); cursor: pointer; flex-shrink: 0;"><svg width="16" height="16" fill="#2C88D9" style="pointer-events: none;"><rect x="7" y="4" width="2" height="8" rx="0.5" ry="0.5"></rect><rect x="4" y="7" width="8" height="2" rx="0.5" ry="0.5"></rect></svg></div></div><div style="position: relative;"><div style="position: relative; user-select: none;"><div style="position: relative; padding: 3px 0px;"><div draggable="true" style="position: relative;"><a draggable="false" href="https://whimsical.com/the-beginning-5Dae769fuhYeCYb3cwdrNB" style="align-items: center; transition: background-color 100ms ease 0s; overflow: hidden; cursor: pointer; z-index: 1; padding-left: 5px; display: flex; position: relative; border-radius: 2px; flex-direction: row;"><div style="padding: 7px 0px 7px 4px; margin-left: -5px; flex-shrink: 0; position: relative;"><svg width="20" height="20" style="transition: transform 50ms ease 0s; transform: rotate(90deg) translateX(1px);"><path d="M11.7962 10.9004C12.0679 10.6892 12.0679 10.3108 11.7962 10.0996L7.97649 7.13032C7.59428 6.83321 7 7.07691 7 7.53075V13.4693C7 13.9231 7.59428 14.1668 7.97649 13.8697L11.7962 10.9004Z" fill="#293845"></path></svg></div><div style="margin: 7px 5px 7px 2px;"><span style="display: inline-block; width: 20px; height: 20px; flex-shrink: 0; padding: 2px;"><svg width="16" height="16" viewBox="0 0 16 16"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M0 3C0 1.89543 0.89543 1 2 1H5.09129C5.31409 1 5.53051 1.0744 5.70621 1.2114L7.72888 2.7886C7.90458 2.9256 8.121 3 8.3438 3H14C15.1046 3 16 3.89543 16 5V12C16 13.1046 15.1046 14 14 14H2C0.895431 14 0 13.1046 0 12V3Z" fill="#788896"></path></g></svg></span></div><div style="line-height: 18px; text-overflow: ellipsis; color: rgb(41, 56, 69); white-space: nowrap; font-size: 15px; font-weight: 500; overflow: hidden; flex-grow: 1; padding: 8px 10px 8px 0px;">The Beginning</div></a></div></div><div style="margin-left: 15px; display: flex; flex-direction: column;"><div style="position: relative; user-select: none;"><div style="position: relative; padding: 3px 0px;"><div draggable="true" style="position: relative;"><a draggable="false" href="https://whimsical.com/tournamentmanagement-NoCk6z9SwuHAFBq3kcjv24" style="align-items: center; transition: background-color 100ms ease 0s; overflow: hidden; margin-left: 14px; background-color: rgb(223, 230, 237); cursor: pointer; z-index: 1; padding-left: 10px; display: flex; position: relative; border-radius: 2px; flex-direction: row;"><div style="margin: 7px 5px 7px 2px;"><span style="display: inline-block; width: 20px; height: 20px; flex-shrink: 0; padding: 2px;"><svg width="16" height="16" viewBox="0 0 16 16"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.33694C0 3.04628 1.04628 2 2.33694 2H13.6631C14.9537 2 16 3.04628 16 4.33694V12.6631C16 13.9537 14.9537 15 13.6631 15H2.33694C1.04628 15 0 13.9537 0 12.6631V4.33694Z" fill="#6558F5"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9.70039 12C9.49219 12 9.32598 11.941 9.20174 11.823C9.07749 11.705 8.97508 11.5043 8.89449 11.2211L7.8569 7.56936H7.83675L6.8193 11.2211C6.74543 11.5043 6.64469 11.705 6.51709 11.823C6.38949 11.941 6.2216 12 6.01341 12C5.81193 12 5.64572 11.941 5.51476 11.823C5.3838 11.705 5.28139 11.5043 5.20751 11.2211L3.79719 6.00145C3.78376 5.95424 3.77369 5.90366 3.76697 5.84971C3.76025 5.79576 3.7569 5.74856 3.7569 5.70809C3.7569 5.50578 3.82238 5.33719 3.95333 5.20231C4.08429 5.06744 4.26058 5 4.4822 5C4.65682 5 4.80624 5.05226 4.93048 5.15679C5.05473 5.26132 5.14707 5.43834 5.20751 5.68786L6.10407 9.49133H6.12422L7.16181 5.63728C7.2827 5.21243 7.51439 5 7.8569 5C8.20612 5 8.44117 5.21243 8.56206 5.63728L9.62987 9.49133H9.65002L10.5164 5.68786C10.5701 5.43834 10.6607 5.26132 10.7883 5.15679C10.9159 5.05226 11.0671 5 11.2417 5C11.4633 5 11.6379 5.06744 11.7655 5.20231C11.8931 5.33719 11.9569 5.50578 11.9569 5.70809C11.9569 5.74856 11.9535 5.79576 11.9468 5.84971C11.9401 5.90366 11.93 5.95424 11.9166 6.00145L10.5063 11.2211C10.4324 11.5043 10.33 11.705 10.199 11.823C10.0681 11.941 9.90186 12 9.70039 12Z" fill="white"></path></g></svg></span></div><div style="line-height: 18px; text-overflow: ellipsis; color: rgb(41, 56, 69); white-space: nowrap; font-size: 15px; font-weight: 500; overflow: hidden; flex-grow: 1; padding: 8px 10px 8px 0px;">tournamentManagement</div></a></div></div></div><div style="position: relative; user-select: none;"><div style="position: relative; padding: 3px 0px;"><div draggable="true" style="position: relative;"><a draggable="false" href="https://whimsical.com/tournament-x-6mrsyqpN7UN69S8EK5NHTq" style="align-items: center; transition: background-color 100ms ease 0s; overflow: hidden; margin-left: 14px; cursor: pointer; z-index: 1; padding-left: 10px; display: flex; position: relative; border-radius: 2px; flex-direction: row;"><div style="margin: 7px 5px 7px 2px;"><span style="display: inline-block; width: 20px; height: 20px; flex-shrink: 0; padding: 2px;"><svg width="16" height="16" viewBox="0 0 16 16"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.33694C0 3.04628 1.04628 2 2.33694 2H13.6631C14.9537 2 16 3.04628 16 4.33694V12.6631C16 13.9537 14.9537 15 13.6631 15H2.33694C1.04628 15 0 13.9537 0 12.6631V4.33694Z" fill="#6558F5"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9.70039 12C9.49219 12 9.32598 11.941 9.20174 11.823C9.07749 11.705 8.97508 11.5043 8.89449 11.2211L7.8569 7.56936H7.83675L6.8193 11.2211C6.74543 11.5043 6.64469 11.705 6.51709 11.823C6.38949 11.941 6.2216 12 6.01341 12C5.81193 12 5.64572 11.941 5.51476 11.823C5.3838 11.705 5.28139 11.5043 5.20751 11.2211L3.79719 6.00145C3.78376 5.95424 3.77369 5.90366 3.76697 5.84971C3.76025 5.79576 3.7569 5.74856 3.7569 5.70809C3.7569 5.50578 3.82238 5.33719 3.95333 5.20231C4.08429 5.06744 4.26058 5 4.4822 5C4.65682 5 4.80624 5.05226 4.93048 5.15679C5.05473 5.26132 5.14707 5.43834 5.20751 5.68786L6.10407 9.49133H6.12422L7.16181 5.63728C7.2827 5.21243 7.51439 5 7.8569 5C8.20612 5 8.44117 5.21243 8.56206 5.63728L9.62987 9.49133H9.65002L10.5164 5.68786C10.5701 5.43834 10.6607 5.26132 10.7883 5.15679C10.9159 5.05226 11.0671 5 11.2417 5C11.4633 5 11.6379 5.06744 11.7655 5.20231C11.8931 5.33719 11.9569 5.50578 11.9569 5.70809C11.9569 5.74856 11.9535 5.79576 11.9468 5.84971C11.9401 5.90366 11.93 5.95424 11.9166 6.00145L10.5063 11.2211C10.4324 11.5043 10.33 11.705 10.199 11.823C10.0681 11.941 9.90186 12 9.70039 12Z" fill="white"></path></g></svg></span></div><div style="line-height: 18px; text-overflow: ellipsis; color: rgb(41, 56, 69); white-space: nowrap; font-size: 15px; font-weight: 500; overflow: hidden; flex-grow: 1; padding: 8px 10px 8px 0px;">Tournament x</div></a></div></div></div><div style="position: relative; user-select: none;"><div style="position: relative; padding: 3px 0px;"><div draggable="true" style="position: relative;"><a draggable="false" href="https://whimsical.com/getting-started-XF2eXuyxTS9si1ys3FXbBx" style="align-items: center; transition: background-color 100ms ease 0s; overflow: hidden; margin-left: 14px; cursor: pointer; z-index: 1; padding-left: 10px; display: flex; position: relative; border-radius: 2px; flex-direction: row;"><div style="margin: 7px 5px 7px 2px;"><span style="display: inline-block; width: 20px; height: 20px; flex-shrink: 0; padding: 2px;"><svg width="16" height="16" viewBox="0 0 16 16"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M7.02186 0.368705C7.51117 -0.121817 8.30413 -0.123058 8.79497 0.36593L15.6294 7.17461C16.1304 7.6737 16.1224 8.48865 15.6117 8.97774L8.6434 15.6514C8.14271 16.1309 7.34931 16.1136 6.86988 15.6127L0.349663 8.8009C-0.123517 8.30656 -0.115458 7.52364 0.367798 7.03919L7.02186 0.368705Z" fill="#730FC3"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5.75693 5.16327C5.75693 4.96599 5.81475 4.80612 5.9304 4.68367C6.04604 4.56122 6.20591 4.5 6.40999 4.5H9.77734C9.98822 4.5 10.1566 4.56122 10.2824 4.68367C10.4083 4.80612 10.4712 4.96258 10.4712 5.15306C10.4712 5.33674 10.4083 5.4898 10.2824 5.61224C10.1566 5.73469 9.98822 5.79592 9.77734 5.79592H7.31815C7.27734 5.79592 7.25693 5.81633 7.25693 5.85714V7.471C7.25693 7.51182 7.27734 7.53222 7.31815 7.53222H9.27734C9.49502 7.53222 9.66509 7.59175 9.78754 7.71079C9.90999 7.82984 9.97121 8.03358 9.97121 8.22406C9.97121 8.41454 9.90999 8.5693 9.78754 8.68835C9.66509 8.80739 9.49502 8.86692 9.27734 8.86692H7.31815C7.27734 8.86692 7.25693 8.88732 7.25693 8.92814V10.7041C7.25693 10.9422 7.1872 11.1344 7.04774 11.2806C6.90829 11.4269 6.72972 11.5 6.51203 11.5C6.29434 11.5 6.11407 11.4269 5.97121 11.2806C5.82836 11.1344 5.75693 10.9422 5.75693 10.7041V5.16327Z" fill="white"></path></g></svg></span></div><div style="line-height: 18px; text-overflow: ellipsis; color: rgb(41, 56, 69); white-space: nowrap; font-size: 15px; font-weight: 500; overflow: hidden; flex-grow: 1; padding: 8px 10px 8px 0px;">Getting Started</div></a></div></div></div><div style="position: relative; user-select: none;"><div style="position: relative; padding: 3px 0px;"><div draggable="true" style="position: relative;"><a draggable="false" href="https://whimsical.com/examples-2qn2KR1yBJmRYsKGqUozcn" style="align-items: center; transition: background-color 100ms ease 0s; overflow: hidden; margin-left: 14px; cursor: pointer; z-index: 1; padding-left: 10px; display: flex; position: relative; border-radius: 2px; flex-direction: row;"><div style="margin: 7px 5px 7px 2px;"><span style="display: inline-block; width: 20px; height: 20px; flex-shrink: 0; padding: 2px;"><svg width="16" height="16" viewBox="0 0 16 16"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M7.02186 0.368705C7.51117 -0.121817 8.30413 -0.123058 8.79497 0.36593L15.6294 7.17461C16.1304 7.6737 16.1224 8.48865 15.6117 8.97774L8.6434 15.6514C8.14271 16.1309 7.34931 16.1136 6.86988 15.6127L0.349663 8.8009C-0.123517 8.30656 -0.115458 7.52364 0.367798 7.03919L7.02186 0.368705Z" fill="#730FC3"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5.75693 5.16327C5.75693 4.96599 5.81475 4.80612 5.9304 4.68367C6.04604 4.56122 6.20591 4.5 6.40999 4.5H9.77734C9.98822 4.5 10.1566 4.56122 10.2824 4.68367C10.4083 4.80612 10.4712 4.96258 10.4712 5.15306C10.4712 5.33674 10.4083 5.4898 10.2824 5.61224C10.1566 5.73469 9.98822 5.79592 9.77734 5.79592H7.31815C7.27734 5.79592 7.25693 5.81633 7.25693 5.85714V7.471C7.25693 7.51182 7.27734 7.53222 7.31815 7.53222H9.27734C9.49502 7.53222 9.66509 7.59175 9.78754 7.71079C9.90999 7.82984 9.97121 8.03358 9.97121 8.22406C9.97121 8.41454 9.90999 8.5693 9.78754 8.68835C9.66509 8.80739 9.49502 8.86692 9.27734 8.86692H7.31815C7.27734 8.86692 7.25693 8.88732 7.25693 8.92814V10.7041C7.25693 10.9422 7.1872 11.1344 7.04774 11.2806C6.90829 11.4269 6.72972 11.5 6.51203 11.5C6.29434 11.5 6.11407 11.4269 5.97121 11.2806C5.82836 11.1344 5.75693 10.9422 5.75693 10.7041V5.16327Z" fill="white"></path></g></svg></span></div><div style="line-height: 18px; text-overflow: ellipsis; color: rgb(41, 56, 69); white-space: nowrap; font-size: 15px; font-weight: 500; overflow: hidden; flex-grow: 1; padding: 8px 10px 8px 0px;">Examples</div></a></div></div></div></div></div><div style="position: relative; margin: 6px 0px;"><div style="position: relative; padding: 3px 0px;"><div style="position: relative;"><a href="https://whimsical.com/LpQxwfQccGa3cXUAGBZgxz" style="align-items: center; color: rgb(41, 56, 69); cursor: pointer; max-width: 100%; padding: 5px; text-decoration: none; display: flex; position: relative; border-radius: 2px; flex-direction: row; height: 34px;"><div style="padding: 7px 0px 7px 4px; margin-left: -5px; flex-shrink: 0; position: relative;"><svg width="20" height="20" style="transition: transform 50ms ease 0s; transform: rotate(0deg);"><path d="M11.7962 10.9004C12.0679 10.6892 12.0679 10.3108 11.7962 10.0996L7.97649 7.13032C7.59428 6.83321 7 7.07691 7 7.53075V13.4693C7 13.9231 7.59428 14.1668 7.97649 13.8697L11.7962 10.9004Z" fill="#293845"></path></svg></div><div style="width: 20px; height: 20px; background-image: url(&quot;/s/images/misc-icons-20x20_5cdc3d99413d842822efb814bf57b545.svg&quot;); background-repeat: no-repeat; background-position: -1540px 0px; margin: 2px;"></div><div class="no-user-select" style="font-size: 15px; font-weight: 500; line-height: 20px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; padding: 2px 4px;">Library</div></a></div></div></div></div></div><div style="display: flex; flex-direction: column; justify-content: flex-end; padding: 11px 20px 11px 2px; border-top: 1px solid rgb(237, 241, 245);"><div style="position: relative; margin: 6px 0px; padding-left: 18px;"><div style="position: relative; padding: 3px 0px;"><div style="position: relative;"><a href="https://whimsical.com/trash-PNm1pMj7twn85FnL9Ez4D9" style="align-items: center; color: rgb(41, 56, 69); cursor: pointer; max-width: 100%; padding: 5px; text-decoration: none; display: flex; position: relative; border-radius: 2px; flex-direction: row; height: 34px;"><div style="width: 20px; height: 20px; background-image: url(&quot;/s/images/misc-icons-20x20_5cdc3d99413d842822efb814bf57b545.svg&quot;); background-repeat: no-repeat; background-position: -2300px 0px; margin: 2px;"></div><div class="no-user-select" style="font-size: 15px; font-weight: 500; line-height: 20px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; padding: 2px 4px;">Trash</div></a></div></div></div></div><div><a style="line-height: 20px; align-items: center; box-shadow: rgba(0, 0, 0, 0.03) 0px 3px 5px 0px; color: rgb(41, 56, 69); font-size: 16px; font-weight: 500; background-color: rgb(255, 255, 255); cursor: pointer; opacity: 1; padding: 20px 20px 20px 5px; display: flex; position: relative; border: 1px solid rgb(223, 231, 237); border-radius: 2px; flex-direction: row; margin: 10px 20px 20px;"><div style="position: absolute; top: 4px; right: 7px; color: rgb(195, 207, 217); font-size: 10px; font-weight: 500; letter-spacing: 1px;">HIDE</div><div style="width: 40px; height: 40px; background-image: url(&quot;/s/images/misc-icons-40x40_99a5c6541d215181fa289b21428080e8.svg&quot;); background-position: 0px 0px; flex-shrink: 0; margin-right: 5px;"></div><div>Create a Workspace For Your Organization</div></a></div></div></div></div><div style="display: flex; flex-direction: column; justify-content: flex-end;"><div class="no-user-select" style="position: relative; z-index: 2; border-top: 1px solid rgb(237, 241, 245); padding: 14px 20px;"><div style="display: flex; flex-direction: row; align-items: center; white-space: nowrap; font-size: 15px; font-weight: 500;"><div style="color: rgb(41, 56, 69); flex-grow: 1;">Total Items</div><div style="color: rgb(120, 136, 150);">13</div></div><div style="height: 4px; border-radius: 2px; background-color: rgb(195, 207, 217); align-self: stretch; margin: 10px 0px 6px; display: flex; justify-content: flex-start;"><div style="height: 4px; width: 0.4%; border-radius: 2px; background-color: rgb(26, 174, 159);"></div></div></div></div></div></div></div><div style="position: absolute; top: 0px; left: 0px; overflow: visible; z-index: 2000;"></div></div><input type="text" id="prefocus" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" style="position: absolute; top: -100px; left: -100px; width: 0px; height: 0px;"><input id="selection-trap8" type="text" readonly="" style="position: fixed; opacity: 0; pointer-events: none; top: 0px; left: 0px; width: 0px; height: 0px;"></div></div><script src="./tournamentManagementWireFrame_files/main_ceeb3b81605927e15fde2f6de79994e5.js.download"></script><script>window.onload=function(){if(typeof app=='undefined'){document.getElementById('root').innerHTML = '<div class="load-error">Sorry, the application did not load successfully. ¯\\_(ツ)_/¯</div><div class="load-error"><a href=".">Try Again</a></div>'}else{app.main.init({"api-url":"","imager-url":"https://imgr.whimsical.com","max-thumbnail-src-width":10000,"cid":"069ffcf0-766c-48ee-82dd-8414d7fe7ea0","s-key":"pk_live_7SXLlrWc9L9TVHEPdCJc9dEE","standard-template-folder-id":"5dd61558-fa14-4b41-995f-d6a87045b290"})}}</script><iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important; pointer-events: none;" aria-hidden="true" tabindex="-1" title="Intercom" src="./tournamentManagementWireFrame_files/saved_resource.html"></iframe><div class="intercom-lightweight-app" aria-live="polite"><style id="intercom-lightweight-app-style" type="text/css">
+  @keyframes intercom-lightweight-app-launcher {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes intercom-lightweight-app-gradient {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes intercom-lightweight-app-messenger {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .intercom-lightweight-app {
+    position: fixed;
+    z-index: 2147483001;
+    width: 0;
+    height: 0;
+    font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif;
+  }
+
+  .intercom-lightweight-app-gradient {
+    position: fixed;
+    z-index: 2147483002;
+    width: 500px;
+    height: 500px;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      ellipse at bottom right,
+      rgba(29, 39, 54, 0.16) 0%,
+      rgba(29, 39, 54, 0) 72%);
+    animation: intercom-lightweight-app-gradient 200ms ease-out;
+  }
+
+  .intercom-lightweight-app-launcher {
+    position: fixed;
+    z-index: 2147483003;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #8313DD;
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+    animation: intercom-lightweight-app-launcher 250ms ease;
+  }
+
+  .intercom-lightweight-app-launcher:focus {
+    outline: none;
+    
+  }
+
+  .intercom-lightweight-app-launcher-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    transition: transform 100ms linear, opacity 80ms linear;
+  }
+
+  .intercom-lightweight-app-launcher-icon-open {
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-open svg {
+    width: 28px;
+    height: 32px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-open svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve {
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve svg {
+    height: 56px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-launcher-custom-icon-open {
+    max-height: 36px;
+    max-width: 36px;
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize {
+    
+        opacity: 0;
+        transform: rotate(-60deg) scale(0);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize svg {
+    width: 16px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-messenger {
+    position: fixed;
+    z-index: 2147483003;
+    overflow: hidden;
+    background-color: white;
+    animation: intercom-lightweight-app-messenger 250ms ease-out;
+    
+        width: 376px;
+        height: calc(100% - 40px);
+        max-height: 704px;
+        min-height: 250px;
+        right: 20px;
+        bottom: 20px;
+        box-shadow: 0 5px 40px rgba(0,0,0,0.16);
+        border-radius: 8px;
+      
+  }
+
+  .intercom-lightweight-app-messenger-header {
+    height: 75px;
+    background: linear-gradient(
+      135deg,
+      rgb(131, 19, 221) 0%,
+      rgb(75, 11, 127) 100%
+    );
+  }
+
+  @media print {
+    .intercom-lightweight-app {
+      display: none;
+    }
+  }
+</style></div></body></html>
