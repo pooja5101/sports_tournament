@@ -17,9 +17,9 @@ h1 {
 }   
 
   .container {
-  position: absolute;
+  position: relative;
   text-align: center;
-  height: 50%;
+  height: auto;
   color: white;
 }
 
@@ -54,8 +54,8 @@ h1 {
 /* Centered text */
 .centered {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 10%;
+  left: 40%;
   transform: translate(-50%, -50%);
 }
 
